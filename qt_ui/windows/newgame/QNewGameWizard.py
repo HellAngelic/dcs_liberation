@@ -170,6 +170,12 @@ class NewGameWizard(QtWidgets.QWizard):
             f18f_hornet=self.field("f18f_hornet"),
             f18d_hornet=self.field("f18d_hornet"),
             f35a_lightning=self.field("f35a_lightning"),
+            f18g_hornet=self.field("f18g_hornet"),
+            f4b_phantom=self.field("f4b_phantom"),
+            a6a_intruder=self.field("a6a_intruder"),
+            f35b_lightning=self.field("f35b_lightning"),
+            f15x_eagle=self.field("f15x_eagle"),
+            j10a_dragon=self.field("j10a_dragon"),
         )
 
         blue_faction = self.faction_selection_page.selected_blue_faction
@@ -658,8 +664,20 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         self.registerField("f18d_hornet", f18d_hornet)
         f18f_hornet = QtWidgets.QCheckBox()
         self.registerField("f18f_hornet", f18f_hornet)
+        f18g_hornet = QtWidgets.QCheckBox()
+        self.registerField("f18g_hornet", f18g_hornet)
+        f4b_phantom = QtWidgets.QCheckBox()
+        self.registerField("f4b_phantom", f4b_phantom)
+        j10a_dragon = QtWidgets.QCheckBox()
+        self.registerField("j10a_dragon", j10a_dragon)
+        f15x_eagle = QtWidgets.QCheckBox()
+        self.registerField("f15x_eagle", f15x_eagle)
+        a6a_intruder = QtWidgets.QCheckBox()
+        self.registerField("a6a_intruder", a6a_intruder)
         f35a_lightning = QtWidgets.QCheckBox()
         self.registerField("f35a_lightning", f35a_lightning)
+        f35b_lightning = QtWidgets.QCheckBox()
+        self.registerField("f35b_lightning", f35b_lightning)
         hercules = QtWidgets.QCheckBox()
         self.registerField("hercules", hercules)
         uh_60l = QtWidgets.QCheckBox()
@@ -719,11 +737,29 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         modLayout.addWidget(QtWidgets.QLabel("F35A"), modLayout_row, 0)
         modLayout.addWidget(f35a_lightning, modLayout_row, 1)
         modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F35B"), modLayout_row, 0)
+        modLayout.addWidget(f35b_lightning, modLayout_row, 1)
+        modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("F18D"), modLayout_row, 0)
         modLayout.addWidget(f18d_hornet, modLayout_row, 1)
         modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("F18F"), modLayout_row, 0)
         modLayout.addWidget(f18f_hornet, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F18G"), modLayout_row, 0)
+        modLayout.addWidget(f18g_hornet, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("A6A"), modLayout_row, 0)
+        modLayout.addWidget(a6a_intruder, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F4B"), modLayout_row, 0)
+        modLayout.addWidget(f4b_phantom, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F15X"), modLayout_row, 0)
+        modLayout.addWidget(f15x_eagle, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("J10A"), modLayout_row, 0)
+        modLayout.addWidget(j10a_dragon, modLayout_row, 1)
         modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("Frenchpack"), modLayout_row, 0)
         modLayout.addWidget(frenchpack, modLayout_row, 1)
