@@ -300,6 +300,15 @@ class Faction:
         if not mod_settings.jas39_gripen:
             self.remove_aircraft("JAS39Gripen")
             self.remove_aircraft("JAS39Gripen_AG")
+        if not mod_settings.f35a_lightning:
+            self.remove_aircraft("VSN_F35A")
+            self.remove_aircraft("VSN_F35A_AG")
+        if not mod_settings.f18f_hornet:
+            self.remove_aircraft("VSN_F18F")
+            self.remove_aircraft("VSN_F18F_AG")
+        if not mod_settings.f18d_hornet:
+            self.remove_aircraft("VSN_F18D")
+            self.remove_aircraft("VSN_F18D_AG")
         if not mod_settings.su57_felon:
             self.remove_aircraft("Su-57")
         # frenchpack
