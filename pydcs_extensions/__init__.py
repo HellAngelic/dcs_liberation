@@ -10,6 +10,11 @@ from .uh60l import *
 from .f18d import *
 from .f18f import *
 from .f35a import *
+from .f4b import *
+from .f15x import *
+from .j10a import *
+from .f18g import *
+from .a6a import *
 
 
 def load_mods() -> None:
