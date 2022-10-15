@@ -52,6 +52,9 @@ class GeneratorSettings:
 @dataclass
 class ModSettings:
     a4_skyhawk: bool = False
+    f35a_lightning: bool = False
+    f18d_hornet: bool = False
+    f18f_hornet: bool = False
     f22_raptor: bool = False
     f104_starfighter: bool = False
     hercules: bool = False
