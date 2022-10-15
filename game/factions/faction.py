@@ -303,12 +303,25 @@ class Faction:
         if not mod_settings.f35a_lightning:
             self.remove_aircraft("VSN_F35A")
             self.remove_aircraft("VSN_F35A_AG")
+        if not mod_settings.f35b_lightning:
+            self.remove_aircraft("VSN_F35B")
+            self.remove_aircraft("VSN_F35B_AG")
         if not mod_settings.f18f_hornet:
-            self.remove_aircraft("VSN_F18F")
-            self.remove_aircraft("VSN_F18F_AG")
+            self.remove_aircraft("VSN_FA18F")
+            self.remove_aircraft("VSN_FA18F_AG")
         if not mod_settings.f18d_hornet:
-            self.remove_aircraft("VSN_F18D")
-            self.remove_aircraft("VSN_F18D_AG")
+            self.remove_aircraft("VSN_FA18D")
+            self.remove_aircraft("VSN_FA18D_AG")
+        if not mod_settings.f18g_hornet:
+            self.remove_aircraft("VSN_EA18G")
+        if not mod_settings.f4b_phantom:
+            self.remove_aircraft("VSN_F4B")
+        if not mod_settings.f15x_eagle:
+            self.remove_aircraft("VSN_F15E_AA")
+        if not mod_settings.j10a_dragon:
+            self.remove_aircraft("J_10A")
+        if not mod_settings.a6a_intruder:
+            self.remove_aircraft("VSN_A6A")
         if not mod_settings.su57_felon:
             self.remove_aircraft("Su-57")
         # frenchpack
