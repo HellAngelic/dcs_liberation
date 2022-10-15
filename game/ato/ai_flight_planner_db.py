@@ -120,6 +120,11 @@ from dcs.unittype import FlyingType
 
 from game.dcs.aircrafttype import AircraftType
 from pydcs_extensions.a4ec.a4ec import A_4E_C
+from pydcs_extensions.f18f.f18f import VSN_FA18F, VSN_FA18F_AG
+from pydcs_extensions.f18d.f18d import VSN_FA18D, VSN_FA18D_AG
+from pydcs_extensions.f35a.f35a import VSN_F35A, VSN_F35A_AG
+from pydcs_extensions.a4ec.a4ec import A_4E_C
+from pydcs_extensions.a4ec.a4ec import A_4E_C
 from pydcs_extensions.f104.f104 import VSN_F104G, VSN_F104S, VSN_F104S_AG
 from pydcs_extensions.f22a.f22a import F_22A
 from pydcs_extensions.hercules.hercules import Hercules
@@ -147,7 +152,9 @@ CAP_CAPABLE = [
     Su_27,
     MiG_29S,
     F_16C_50,
+    VSN_FA18F,
     FA_18C_hornet,
+    VSN_FA18D,
     JF_17,
     JAS39Gripen,
     F_16A,
@@ -205,6 +212,8 @@ CAS_CAPABLE = [
     Su_25,
     F_15E,
     F_16C_50,
+    VSN_FA18D_AG,
+    VSN_FA18F_AG,
     FA_18C_hornet,
     Tornado_GR4,
     Tornado_IDS,
@@ -282,6 +291,8 @@ CAS_CAPABLE = [
 SEAD_CAPABLE = [
     JF_17,
     F_16C_50,
+    VSN_F18F_AG,
+    VSN_F18D_AG,
     FA_18C_hornet,
     Tornado_IDS,
     Su_25T,
@@ -343,9 +354,12 @@ STRIKE_CAPABLE = [
     AJS37,
     Tornado_GR4,
     F_16C_50,
+    VSN_F18F_AG,
+    VSN_F18D_AG,
     FA_18C_hornet,
     AV8BNA,
     JF_17,
+    VSN_F35A_AG,
     F_16A,
     F_14B,
     F_14A_135_GR,
@@ -408,6 +422,8 @@ ANTISHIP_CAPABLE = [
     Tu_142,
     Tu_22M3,
     H_6J,
+    VSN_F18F_AG,
+    VSN_F18D_AG,
     FA_18C_hornet,
     JAS39Gripen_AG,
     Su_24M,
