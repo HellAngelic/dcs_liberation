@@ -167,6 +167,9 @@ class NewGameWizard(QtWidgets.QWizard):
             su57_felon=self.field("su57_felon"),
             frenchpack=self.field("frenchpack"),
             high_digit_sams=self.field("high_digit_sams"),
+            f18f_hornet=self.field("f18f_hornet"),
+            f18d_hornet=self.field("f18d_hornet"),
+            f35a_lightning=self.field("f35a_lightning"),
         )
 
         blue_faction = self.faction_selection_page.selected_blue_faction
@@ -651,6 +654,12 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         modSettingsGroup = QtWidgets.QGroupBox("Mod Settings")
         a4_skyhawk = QtWidgets.QCheckBox()
         self.registerField("a4_skyhawk", a4_skyhawk)
+        f18d_hornet = QtWidgets.QCheckBox()
+        self.registerField("f18d_hornet", f18d_hornet)
+        f18f_hornet = QtWidgets.QCheckBox()
+        self.registerField("f18f_hornet", f18f_hornet)
+        f35a_lightning = QtWidgets.QCheckBox()
+        self.registerField("f35a_lightning", f35a_lightning)
         hercules = QtWidgets.QCheckBox()
         self.registerField("hercules", hercules)
         uh_60l = QtWidgets.QCheckBox()
@@ -706,6 +715,15 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("Su-57 Felon"), modLayout_row, 0)
         modLayout.addWidget(su57_felon, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F35A"), modLayout_row, 0)
+        modLayout.addWidget(f35a_lightning, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F18D"), modLayout_row, 0)
+        modLayout.addWidget(f18d_hornet, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F18F"), modLayout_row, 0)
+        modLayout.addWidget(f18f_hornet, modLayout_row, 1)
         modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("Frenchpack"), modLayout_row, 0)
         modLayout.addWidget(frenchpack, modLayout_row, 1)
