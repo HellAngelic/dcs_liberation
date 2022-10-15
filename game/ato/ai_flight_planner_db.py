@@ -122,9 +122,13 @@ from game.dcs.aircrafttype import AircraftType
 from pydcs_extensions.a4ec.a4ec import A_4E_C
 from pydcs_extensions.f18f.f18f import VSN_FA18F, VSN_FA18F_AG
 from pydcs_extensions.f18d.f18d import VSN_FA18D, VSN_FA18D_AG
+from pydcs_extensions.f18g.f18g import VSN_EA18G
 from pydcs_extensions.f35a.f35a import VSN_F35A, VSN_F35A_AG
-from pydcs_extensions.a4ec.a4ec import A_4E_C
-from pydcs_extensions.a4ec.a4ec import A_4E_C
+from pydcs_extensions.f35b.f35b import VSN_F35B, VSN_F35B_AG
+from pydcs_extensions.f4b.f4b import VSN_F4B
+from pydcs_extensions.a6a.a6a import VSN_A6A
+from pydcs_extensions.f15x.f15x import VSN_F15E_AA
+from pydcs_extensions.j10a.j10a import J_10A
 from pydcs_extensions.f104.f104 import VSN_F104G, VSN_F104S, VSN_F104S_AG
 from pydcs_extensions.f22a.f22a import F_22A
 from pydcs_extensions.hercules.hercules import Hercules
@@ -143,9 +147,14 @@ from .flighttype import FlightType
 CAP_CAPABLE = [
     Su_57,
     F_22A,
+    VSN_F15E_AA,
     F_15C,
     F_14B,
     F_14A_135_GR,
+    VSN_F35A,
+    VSN_F35B,
+    JF_17,
+    J_10A,
     Su_33,
     J_11A,
     Su_30,
@@ -155,7 +164,6 @@ CAP_CAPABLE = [
     VSN_FA18F,
     FA_18C_hornet,
     VSN_FA18D,
-    JF_17,
     JAS39Gripen,
     F_16A,
     F_4E,
@@ -175,6 +183,7 @@ CAP_CAPABLE = [
     Mirage_F1M_EE,
     Mirage_F1C_200,
     Mirage_F1CT,
+    VSN_F4B,
     F_15E,
     M_2000C,
     F_5E_3,
@@ -215,6 +224,8 @@ CAS_CAPABLE = [
     VSN_FA18D_AG,
     VSN_FA18F_AG,
     FA_18C_hornet,
+    VSN_F4B,
+    VSN_A6A,
     Tornado_GR4,
     Tornado_IDS,
     JAS39Gripen_AG,
@@ -295,6 +306,8 @@ SEAD_CAPABLE = [
     VSN_F18D_AG,
     FA_18C_hornet,
     Tornado_IDS,
+    VSN_F35A_AG,
+    VSN_F35B_AG,
     Su_25T,
     Su_25TM,
     F_4E,
@@ -360,6 +373,9 @@ STRIKE_CAPABLE = [
     AV8BNA,
     JF_17,
     VSN_F35A_AG,
+    VSN_F35B_AG,
+    VSN_F4B,
+    VSN_A6A,
     F_16A,
     F_14B,
     F_14A_135_GR,
@@ -422,6 +438,7 @@ ANTISHIP_CAPABLE = [
     Tu_142,
     Tu_22M3,
     H_6J,
+    Su_34,
     VSN_F18F_AG,
     VSN_F18D_AG,
     FA_18C_hornet,
@@ -429,7 +446,9 @@ ANTISHIP_CAPABLE = [
     Su_24M,
     Su_17M4,
     JF_17,
-    Su_34,
+    VSN_F35A_AG,
+    VSN_F35B_AG,
+    VSN_A6A,
     Su_30,
     Tornado_IDS,
     Tornado_GR4,
@@ -461,6 +480,8 @@ RUNWAY_ATTACK_CAPABLE = [
     AJS37,
     F_16C_50,
     FA_18C_hornet,
+    VSN_A6A,
+    VSN_F4B,
     AV8BNA,
     JF_17,
     F_16A,
