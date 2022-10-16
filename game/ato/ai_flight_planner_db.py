@@ -120,11 +120,11 @@ from dcs.unittype import FlyingType
 
 from game.dcs.aircrafttype import AircraftType
 from pydcs_extensions.a4ec.a4ec import A_4E_C
-from pydcs_extensions.f18f.f18f import VSN_FA18F, VSN_FA18F_AG
-from pydcs_extensions.f18d.f18d import VSN_FA18D, VSN_FA18D_AG
+from pydcs_extensions.f18f.f18f import VSN_FA18F
+from pydcs_extensions.f18d.f18d import VSN_FA18D
 from pydcs_extensions.f18g.f18g import VSN_EA18G
-from pydcs_extensions.f35a.f35a import VSN_F35A, VSN_F35A_AG
-from pydcs_extensions.f35b.f35b import VSN_F35B, VSN_F35B_AG
+from pydcs_extensions.f35a.f35a import VSN_F35A
+from pydcs_extensions.f35b.f35b import VSN_F35B
 from pydcs_extensions.f4b.f4b import VSN_F4B
 from pydcs_extensions.a6a.a6a import VSN_A6A
 from pydcs_extensions.f15x.f15x import VSN_F15E_AA
@@ -221,8 +221,8 @@ CAS_CAPABLE = [
     Su_25,
     F_15E,
     F_16C_50,
-    VSN_FA18D_AG,
-    VSN_FA18F_AG,
+    VSN_FA18D,
+    VSN_FA18F,
     FA_18C_hornet,
     VSN_F4B,
     VSN_A6A,
@@ -302,12 +302,12 @@ CAS_CAPABLE = [
 SEAD_CAPABLE = [
     JF_17,
     F_16C_50,
-    VSN_F18F_AG,
-    VSN_F18D_AG,
+    VSN_F18F,
+    VSN_F18D,
     FA_18C_hornet,
     Tornado_IDS,
-    VSN_F35A_AG,
-    VSN_F35B_AG,
+    VSN_F35A,
+    VSN_F35B,
     Su_25T,
     Su_25TM,
     F_4E,
@@ -367,19 +367,19 @@ STRIKE_CAPABLE = [
     AJS37,
     Tornado_GR4,
     F_16C_50,
-    VSN_F18F_AG,
-    VSN_F18D_AG,
+    VSN_F18F,
+    VSN_F18D,
     FA_18C_hornet,
     AV8BNA,
     JF_17,
-    VSN_F35A_AG,
-    VSN_F35B_AG,
+    VSN_F35A,
+    VSN_F35B,
     VSN_F4B,
     VSN_A6A,
     F_16A,
     F_14B,
     F_14A_135_GR,
-    JAS39Gripen_AG,
+    JAS39Gripen,
     Tornado_IDS,
     Su_17M4,
     Su_24M,
@@ -439,15 +439,15 @@ ANTISHIP_CAPABLE = [
     Tu_22M3,
     H_6J,
     Su_34,
-    VSN_F18F_AG,
-    VSN_F18D_AG,
+    VSN_F18F,
+    VSN_F18D,
     FA_18C_hornet,
-    JAS39Gripen_AG,
+    JAS39Gripen,
     Su_24M,
     Su_17M4,
     JF_17,
-    VSN_F35A_AG,
-    VSN_F35B_AG,
+    VSN_F35A,
+    VSN_F35B,
     VSN_A6A,
     Su_30,
     Tornado_IDS,
