@@ -312,7 +312,7 @@ class Faction:
         if not mod_settings.f18d_hornet:
             self.remove_aircraft("VSN_FA18D")
             self.remove_aircraft("VSN_FA18D_AG")
-        if not mod_settings.f18g_hornet:
+        if not mod_settings.f18g_growler:
             self.remove_aircraft("VSN_EA18G")
         if not mod_settings.f4b_phantom:
             self.remove_aircraft("VSN_F4B")
