@@ -7,6 +7,10 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+
+
+
+#inject_weapons(WeaponsF18F)
 @planemod
 class VSN_FA18F(PlaneType):
     id = "VSN_FA18F"
