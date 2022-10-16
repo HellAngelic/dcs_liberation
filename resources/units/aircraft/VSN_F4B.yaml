@@ -1,0 +1,10 @@
+carrier_capable: false
+description: F-4B Phantom II
+introduced: 2001
+manufacturer: Boeing
+origin: USA
+price: 22
+role: Fighter-Bomber
+gunfighter: true
+variants:
+ F-4B Phantom II: {}

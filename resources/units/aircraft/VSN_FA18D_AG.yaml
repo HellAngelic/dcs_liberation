@@ -1,10 +1,10 @@
 carrier_capable: true
-description: F/A-18F Super Hornet.
+description: F/A-18D Hornet.
 introduced: 2001
-manufacturer: Boeing
+manufacturer: McDonnell Douglas
 origin: USA
-price: 35
+price: 27
 role: Carrier-based Fighter-Bomber
 gunfighter: true
 variants:
- F/A-18F Super Hornet AG: {}
+ F/A-18D Hornet AG: {}

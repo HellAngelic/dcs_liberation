@@ -1,10 +1,10 @@
 carrier_capable: true
-description: F/A-18F Super Hornet.
+description: E/A-18G Growler.
 introduced: 2001
 manufacturer: Boeing
 origin: USA
-price: 35
+price: 40
 role: Carrier-based Fighter
 gunfighter: true
 variants:
- F/A-18F Super Hornet: {}
+ E/A-18G Growler: {}

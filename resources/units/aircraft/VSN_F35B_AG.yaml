@@ -3,8 +3,8 @@ description: F/A-18F Super Hornet.
 introduced: 2001
 manufacturer: Boeing
 origin: USA
-price: 35
-role: Carrier-based Fighter
+price: 50
+role: Carrier-based Fighter-Bomber
 gunfighter: true
 variants:
- F/A-18F Super Hornet: {}
+ F-35B Lightning AG: {}

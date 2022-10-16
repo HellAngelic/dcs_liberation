@@ -1,0 +1,10 @@
+carrier_capable: true
+description: A-6A Intruder
+introduced: 2001
+manufacturer: Boeing
+origin: USA
+price: 20
+role: Close Air Support/Attack
+gunfighter: false
+variants:
+ A-6A Intruder: {}

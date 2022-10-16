@@ -1,0 +1,10 @@
+carrier_capable: false
+description: J-10A.
+introduced: 2001
+manufacturer: Boeing
+origin: USA
+price: 22
+role: Fighter
+gunfighter: true
+variants:
+ J-10A: {}
