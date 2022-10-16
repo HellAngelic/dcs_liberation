@@ -48,7 +48,7 @@ class UH_60L(HelicopterType):
     width = 16.4
     length = 19.76
     fuel_max = 1362
-    max_speed = 355.584
+    max_speed = 355.583
     chaff = 30
     flare = 60
     charge_total = 90
