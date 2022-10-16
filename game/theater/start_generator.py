@@ -53,8 +53,14 @@ class GeneratorSettings:
 class ModSettings:
     a4_skyhawk: bool = False
     f35a_lightning: bool = False
+    f35b_lightning: bool = False
     f18d_hornet: bool = False
     f18f_hornet: bool = False
+    f18g_growler: bool = False
+    j10a_dragon: bool = False
+    f4b_phantom: bool = False
+    f15x_eagle: bool = False
+    a6a_intruder: bool = False
     f22_raptor: bool = False
     f104_starfighter: bool = False
     hercules: bool = False
