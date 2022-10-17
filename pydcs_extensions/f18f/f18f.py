@@ -8,17 +8,13 @@ from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
 class WeaponsF18F:
+    Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
     Fuel_Tank_330_gallons__ = {"clsid": "{VSN_F18F_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
-    AGM_86C = {"clsid": "{AGM_86C}", "name": "AGM-86C", "weight": 2050}
-
-
-
-
-
-
 
 
 inject_weapons(WeaponsF18F)
+
+
 @planemod
 class VSN_FA18F(PlaneType):
     id = "VSN_FA18F"
