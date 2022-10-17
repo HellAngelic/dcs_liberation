@@ -25,8 +25,7 @@ class VSN_FA18D(PlaneType):
     radio_frequency = 127.5
 
     livery_name = "VSN_FA18D"  # from type
-    Liveries = Liveries()[livery_name]
-
+  
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         CATM_9M = (1, Weapons.CATM_9M)
