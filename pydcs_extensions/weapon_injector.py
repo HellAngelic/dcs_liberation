@@ -1,7 +1,7 @@
 from typing import List, Any
 
 from dcs.weapons_data import Weapons, weapon_ids
-class Weapons:
+class inject_weapons:
     AB_250_2___144_x_SD_2__250kg_CBU_with_HE_submunitions = {"clsid": "{AB_250_2_SD_2}", "name": "AB 250-2 - 144 x SD-2, 250kg CBU with HE submunitions", "weight": 280}
     AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_250_2_SD_10A}", "name": "AB 250-2 - 17 x SD-10A, 250kg CBU with 10kg Frag/HE submunitions", "weight": 220}
     AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_500_1_SD_10A}", "name": "AB 500-1 - 34 x SD-10A, 500kg CBU with 10kg Frag/HE submunitions", "weight": 470}
