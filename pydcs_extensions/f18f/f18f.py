@@ -10,6 +10,12 @@ from pydcs_extensions.weapon_injector import inject_weapons
 class WeaponsF18F:
     Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
     Fuel_Tank_330_gallons__ = {"clsid": "{VSN_F18F_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    _NiteHawk_FLIR = {"clsid": "_NiteHawk_FLIR", "name": "AN/AAS-38 \"Nite hawk\" FLIR, Laser designator & Laser spot tracker pod", "weight": 200}
+    FPU_8A_Fuel_Tank_330_gallons = {"clsid": "{FPU_8A_FUEL_TANK}", "name": "FPU-8A Fuel Tank 330 gallons", "weight": 1150}
+    AGM_86C = {"clsid": "{AGM_86C}", "name": "AGM-86C", "weight": 2050}
+    AGM_86D = {"clsid": "{769A15DF-6AFB-439F-9B24-5B7A45C59D16}", "name": "AGM-86D", "weight": 1950}
+    _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{A76344EB-32D2-4532-8FA2-0C1BDC00747E}", "name": "3 x LAU-61 pods - 57 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 876.45}
+
 
 
 inject_weapons(WeaponsF18F)
