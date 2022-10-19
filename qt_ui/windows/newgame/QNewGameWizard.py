@@ -170,7 +170,7 @@ class NewGameWizard(QtWidgets.QWizard):
             f18f_hornet=self.field("f18f_hornet"),
             f18d_hornet=self.field("f18d_hornet"),
             f35a_lightning=self.field("f35a_lightning"),
-            f18g_hornet=self.field("f18g_hornet"),
+            f18g_growler=self.field("f18g_growler"),
             f4b_phantom=self.field("f4b_phantom"),
             a6a_intruder=self.field("a6a_intruder"),
             f35b_lightning=self.field("f35b_lightning"),
