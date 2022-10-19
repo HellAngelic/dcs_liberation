@@ -12,7 +12,8 @@ class WeaponsF35B:
     Fuel_Tank_330_gallons__ = {"clsid": "{VSN_F18F_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
     ALQ_99_Function_as_tank = {"clsid": "{VSN_F18G_ALQ99}", "name": "ALQ-99 Function as tank", "weight": 1150}
     Fuel_tank_610_gal_ = {"clsid": "{VSN_F35A_PTB}", "name": "Fuel tank 610 gal", "weight": 1960}
-
+    F35_GAU_22_gun_pod = {"clsid": "{VSN_F35_Gunpod}", "name": "F35 GAU-22 gun pod", "weight": 112.35}
+    
 inject_weapons(WeaponsF35B)
 
 @planemod
