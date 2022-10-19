@@ -7,6 +7,14 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+class WeaponsF35B:
+    Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    Fuel_Tank_330_gallons__ = {"clsid": "{VSN_F18F_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    ALQ_99_Function_as_tank = {"clsid": "{VSN_F18G_ALQ99}", "name": "ALQ-99 Function as tank", "weight": 1150}
+    Fuel_tank_610_gal_ = {"clsid": "{VSN_F35A_PTB}", "name": "Fuel tank 610 gal", "weight": 1960}
+
+inject_weapons(WeaponsF35B)
+
 @planemod
 class VSN_F35B(PlaneType):
     id = "VSN_F35B"
