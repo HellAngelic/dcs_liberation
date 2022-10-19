@@ -7,6 +7,17 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+class WeaponsF4B:
+    F4B_SUU_23_Gun_Pod = {"clsid": "{VSN_F4B_Gunpod}", "name": "F4B SUU-23 Gun Pod", "weight": 112.35}
+    Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    VSN_F4EC_PTB = {"clsid": "VSN_F4EC_PTB", "name": "Fuel tank 600 Gal", "weight": 1980}
+    VSN_F4EL_PTB = {"clsid": "VSN_F4EL_PTB", "name": "Fuel tank 370 Gal", "weight": 1240}
+    VSN_F4ER_PTB = {"clsid": "VSN_F4ER_PTB", "name": "Fuel tank 370 Gal", "weight": 1240}
+    BRU_41A_with_6_x_Mk_82___500lb_GP_Bomb_LD = {"clsid": "{BRU41_6X_MK-82}", "name": "BRU-41A with 6 x Mk-82 - 500lb GP Bomb LD", "weight": 1495.913}
+    
+
+inject_weapons(WeaponsF4B)
+
 @planemod
 class VSN_F4B(PlaneType):
     id = "VSN_F4B"
@@ -24,8 +35,10 @@ class VSN_F4B(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 127.5
 
-    livery_name = "VSN_F4B"  # from type
-    Liveries = Liveries()[livery_name]
+
+    class Liveries:
+        class USA(enum):
+            default = "VSN_F4B"
 
     class Pylon1:
         Smoke_Generator___red_ = (1, Weapons.Smoke_Generator___red_)
@@ -168,7 +181,7 @@ class VSN_F4B(PlaneType):
         L005_Sorbtsiya_ECM_pod__left_ = (11, Weapons.L005_Sorbtsiya_ECM_pod__left_)
         L_081_Fantasmagoria_ELINT_pod = (11, Weapons.L_081_Fantasmagoria_ELINT_pod)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack]
     task_default = task.CAP

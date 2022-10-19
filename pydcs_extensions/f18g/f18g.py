@@ -7,6 +7,14 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+class WeaponsF18G:
+    Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    Fuel_Tank_330_gallons__ = {"clsid": "{VSN_F18F_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    ALQ_99_Function_as_tank = {"clsid": "{VSN_F18G_ALQ99}", "name": "ALQ-99 Function as tank", "weight": 1150}
+
+
+inject_weapons(WeaponsF18G)
+
 @planemod
 class VSN_EA18G(PlaneType):
     id = "VSN_EA18G"
@@ -24,8 +32,9 @@ class VSN_EA18G(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 127.5
 
-    livery_name = "VSN_EA18G"  # from type
-    Liveries = Liveries()[livery_name]
+    class Liveries:
+        class USA(Enum):
+            default = "VSN_EA18G"
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -183,7 +192,7 @@ class VSN_EA18G(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         L005_Sorbtsiya_ECM_pod__right_ = (11, Weapons.L005_Sorbtsiya_ECM_pod__right_)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.FighterSweep

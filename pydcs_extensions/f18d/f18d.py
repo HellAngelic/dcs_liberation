@@ -7,6 +7,15 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+class WeaponsF18D:
+    Fuel_Tank_330_gallons = {"clsid": "{VSN_EFT_PTB}", "name": "Fuel Tank 330 gallons", "weight": 1150}
+    VSN_Fuel_Tank_330_gallons = {"clsid": "{VSN_F18D_PTB}", "name": "VSN Fuel Tank 330 gallons", "weight": 1150}
+    _NiteHawk_FLIR = {"clsid": "_NiteHawk_FLIR", "name": "AN/AAS-38 \"Nite hawk\" FLIR, Laser designator & Laser spot tracker pod", "weight": 200}
+
+
+
+inject_weapons(WeaponsF18D)
+
 @planemod
 class VSN_FA18D(PlaneType):
     id = "VSN_FA18D"
@@ -24,8 +33,10 @@ class VSN_FA18D(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 127.5
 
-    livery_name = "VSN_FA18D"  # from type
-  
+    class Liveries:
+        class USA(Enum):
+            default = "VSN_FA18D"
+
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         CATM_9M = (1, Weapons.CATM_9M)
@@ -267,7 +278,7 @@ class VSN_FA18D(PlaneType):
         AIM_9X_Sidewinder_IR_AAM = (11, Weapons.AIM_9X_Sidewinder_IR_AAM)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack]
     task_default = task.CAP

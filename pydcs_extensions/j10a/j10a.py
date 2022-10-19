@@ -7,6 +7,91 @@ from dcs.weapons_data import Weapons
 from game.modsupport import planemod
 from pydcs_extensions.weapon_injector import inject_weapons
 
+class WeaponsJ10A:
+
+    J_10A_CENTER_TANK = {"clsid": "{J-10A CENTER TANK}", "name": "J-10A CENTER TANK", "weight": 802}
+    J_10A_SIDE_TANK = {"clsid": "{J-10A SIDE TANK}", "name": "J-10A SIDE TANK", "weight": 641.6}
+    DIS_AKD_10 = {"clsid": "DIS_AKD-10", "name": "AKD-10", "weight": 58}
+    DIS_AKG_DLPOD = {"clsid": "DIS_AKG_DLPOD", "name": "DATA-LINK POD", "weight": 295}
+    DIS_BOMB_250_2 = {"clsid": "DIS_BOMB_250_2", "name": "250-2 - 250kg GP Bombs HD", "weight": 250}
+    DIS_BOMB_250_3 = {"clsid": "DIS_BOMB_250_3", "name": "250-3 - 250kg GP Bombs LD", "weight": 250}
+    DIS_BRM1_90 = {"clsid": "DIS_BRM1_90", "name": "BRM-1_90MM", "weight": 462.5}
+    DIS_CM_802AKG = {"clsid": "DIS_CM-802AKG", "name": "CM802AKG", "weight": 765}
+    DIS_CM_802AKG_AI = {"clsid": "DIS_CM-802AKG_AI", "name": "CM-802AKG (AI Only)", "weight": 765}
+    DIS_C_701IR = {"clsid": "DIS_C-701IR", "name": "C-701IR", "weight": 170}
+    DIS_C_701T = {"clsid": "DIS_C-701T", "name": "C-701T", "weight": 170}
+    DIS_C_802AK = {"clsid": "DIS_C-802AK", "name": "C802AK", "weight": 765}
+    DIS_DF4A_KD20 = {"clsid": "DIS_DF4A_KD20", "name": "KD-20", "weight": 1750}
+    DIS_DF4B_YJ12 = {"clsid": "DIS_DF4B_YJ12", "name": "YJ-12", "weight": 1800}
+    DIS_GB6 = {"clsid": "DIS_GB6", "name": "GB-6", "weight": 672}
+    DIS_GB6_HE = {"clsid": "DIS_GB6_HE", "name": "GB-6-HE", "weight": 672}
+    DIS_GB6_TSP = {"clsid": "DIS_GB6_TSP", "name": "GB-6-SFW", "weight": 672}
+    DIS_GBU_10 = {"clsid": "DIS_GBU_10", "name": "GBU-10", "weight": 1162}
+    DIS_GBU_12 = {"clsid": "DIS_GBU_12", "name": "GBU-12", "weight": 275}
+    DIS_GBU_12_DUAL_GDJ_II19_L = {"clsid": "DIS_GBU_12_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x GBU-12", "weight": 629}
+    DIS_GBU_12_DUAL_GDJ_II19_R = {"clsid": "DIS_GBU_12_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x GBU-12", "weight": 629}
+    DIS_GBU_16 = {"clsid": "DIS_GBU_16", "name": "GBU-16", "weight": 564}
+    DIS_GDJ_KD63 = {"clsid": "DIS_GDJ_KD63", "name": "KD-63", "weight": 2050}
+    DIS_GDJ_KD63B = {"clsid": "DIS_GDJ_KD63B", "name": "KD-63B", "weight": 2050}
+    DIS_GDJ_YJ83K = {"clsid": "DIS_GDJ_YJ83K", "name": "YJ-83K", "weight": 765}
+    DIS_H6_250_2_N12 = {"clsid": "DIS_H6_250_2_N12", "name": "12 x 250-2 - 250kg GP Bombs HD", "weight": 3000}
+    DIS_H6_250_2_N24 = {"clsid": "DIS_H6_250_2_N24", "name": "24 x 250-2 - 250kg GP Bombs HD", "weight": 6000}
+    DIS_KD20 = {"clsid": "DIS_KD20", "name": "KD-20", "weight": 1700}
+    DIS_KD63 = {"clsid": "DIS_KD63", "name": "KD-63", "weight": 2000}
+    DIS_KD63B = {"clsid": "DIS_KD63B", "name": "KD-63B", "weight": 2000}
+    DIS_LAU68_MK5_DUAL_GDJ_II19_L = {"clsid": "DIS_LAU68_MK5_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x LAU68 MK5", "weight": 261.06}
+    DIS_LAU68_MK5_DUAL_GDJ_II19_R = {"clsid": "DIS_LAU68_MK5_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x LAU68 MK5", "weight": 261.06}
+    DIS_LD_10 = {"clsid": "DIS_LD-10", "name": "LD-10", "weight": 289}
+    DIS_LD_10_DUAL_L = {"clsid": "DIS_LD-10_DUAL_L", "name": "LD-10 x 2", "weight": 558}
+    DIS_LD_10_DUAL_R = {"clsid": "DIS_LD-10_DUAL_R", "name": "LD-10 x 2", "weight": 558}
+    DIS_LS_6_100 = {"clsid": "DIS_LS_6_100", "name": "LS-6-100", "weight": 133}
+    DIS_LS_6_100_DUAL_L = {"clsid": "DIS_LS_6_100_DUAL_L", "name": "LS-6-100 Dual", "weight": 221}
+    DIS_LS_6_100_DUAL_R = {"clsid": "DIS_LS_6_100_DUAL_R", "name": "LS-6-100 Dual", "weight": 221}
+    DIS_LS_6_250 = {"clsid": "DIS_LS_6_250", "name": "LS-6-250", "weight": 320}
+    DIS_LS_6_250_DUAL_L = {"clsid": "DIS_LS_6_250_DUAL_L", "name": "LS-6-250 Dual", "weight": 595}
+    DIS_LS_6_250_DUAL_R = {"clsid": "DIS_LS_6_250_DUAL_R", "name": "LS-6-250 Dual", "weight": 595}
+    DIS_LS_6_500 = {"clsid": "DIS_LS_6_500", "name": "LS-6-500", "weight": 570}
+    DIS_MER6_250_2_N6 = {"clsid": "DIS_MER6_250_2_N6", "name": "MER6 - 6 x 250-2 - 250kg GP Bombs HD", "weight": 1550}
+    DIS_MER6_250_3_N6 = {"clsid": "DIS_MER6_250_3_N6", "name": "MER6 - 6 x 250-3 - 250kg GP Bombs LD", "weight": 1550}
+    DIS_MK_20 = {"clsid": "DIS_MK_20", "name": "Mk-20", "weight": 222}
+    DIS_MK_20_DUAL_GDJ_II19_L = {"clsid": "DIS_MK_20_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x Mk-20", "weight": 523}
+    DIS_MK_20_DUAL_GDJ_II19_R = {"clsid": "DIS_MK_20_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x Mk-20", "weight": 523}
+    DIS_MK_82S_DUAL_GDJ_II19_L = {"clsid": "DIS_MK_82S_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x Mk-82 SnakeEye", "weight": 543}
+    DIS_MK_82S_DUAL_GDJ_II19_R = {"clsid": "DIS_MK_82S_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x Mk-82 SnakeEye", "weight": 543}
+    DIS_MK_82_DUAL_GDJ_II19_L = {"clsid": "DIS_MK_82_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x Mk-82", "weight": 561}
+    DIS_MK_82_DUAL_GDJ_II19_R = {"clsid": "DIS_MK_82_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x Mk-82", "weight": 561}
+    DIS_mk46torp = {"clsid": "DIS_mk46torp", "name": "MK46 Torpedo", "weight": 231}
+    DIS_PL_12 = {"clsid": "DIS_PL-12", "name": "PL-12", "weight": 199}
+    DIS_PL_5EII = {"clsid": "DIS_PL-5EII", "name": "PL-5EII", "weight": 153}
+    DIS_PL_8A = {"clsid": "DIS_PL-8A", "name": "PL-8A", "weight": 115}
+    DIS_PL_8B = {"clsid": "DIS_PL-8B", "name": "PL-8B", "weight": 115}
+    DIS_RKT_90_UG = {"clsid": "DIS_RKT_90_UG", "name": "UG_90MM", "weight": 462.5}
+    DIS_SD_10 = {"clsid": "DIS_SD-10", "name": "SD-10", "weight": 289}
+    DIS_SD_10_DUAL_L = {"clsid": "DIS_SD-10_DUAL_L", "name": "SD-10 x 2", "weight": 558}
+    DIS_SD_10_DUAL_R = {"clsid": "DIS_SD-10_DUAL_R", "name": "SD-10 x 2", "weight": 558}
+    DIS_SMOKE_GENERATOR_B = {"clsid": "DIS_SMOKE_GENERATOR_B", "name": "Smoke Generator - blue", "weight": 0}
+    DIS_SMOKE_GENERATOR_G = {"clsid": "DIS_SMOKE_GENERATOR_G", "name": "Smoke Generator - green", "weight": 0}
+    DIS_SMOKE_GENERATOR_O = {"clsid": "DIS_SMOKE_GENERATOR_O", "name": "Smoke Generator - orange", "weight": 0}
+    DIS_SMOKE_GENERATOR_R = {"clsid": "DIS_SMOKE_GENERATOR_R", "name": "Smoke Generator - red", "weight": 0}
+    DIS_SMOKE_GENERATOR_W = {"clsid": "DIS_SMOKE_GENERATOR_W", "name": "Smoke Generator - white", "weight": 0}
+    DIS_SMOKE_GENERATOR_Y = {"clsid": "DIS_SMOKE_GENERATOR_Y", "name": "Smoke Generator - yellow", "weight": 0}
+    DIS_SPJ_POD = {"clsid": "DIS_SPJ_POD", "name": "KG-600", "weight": 270}
+    DIS_TANK1100 = {"clsid": "DIS_TANK1100", "name": "1100L Tank", "weight": 1064}
+    DIS_TANK1100_EMPTY = {"clsid": "DIS_TANK1100_EMPTY", "name": "1100L Tank Empty", "weight": 75}
+    DIS_TANK800 = {"clsid": "DIS_TANK800", "name": "800L Tank", "weight": 730}
+    DIS_TANK800_EMPTY = {"clsid": "DIS_TANK800_EMPTY", "name": "800L Tank Empty", "weight": 45}
+    DIS_TYPE200 = {"clsid": "DIS_TYPE200", "name": "TYPE-200A", "weight": 200}
+    DIS_TYPE200_DUAL_L = {"clsid": "DIS_TYPE200_DUAL_L", "name": "TYPE-200A Dual", "weight": 400}
+    DIS_TYPE200_DUAL_R = {"clsid": "DIS_TYPE200_DUAL_R", "name": "TYPE-200A Dual", "weight": 400}
+    DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "WMD7 POD", "weight": 295}
+    DIS_YJ12 = {"clsid": "DIS_YJ12", "name": "YJ-12", "weight": 1750}
+    DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ-83K", "weight": 715}
+    DIS_YU_6 = {"clsid": "DIS_YU_6", "name": "YU-6", "weight": 1558}
+
+
+
+inject_weapons(WeaponsJ10A)
+
 @planemod
 class J_10A(PlaneType):
     id = "J-10A"
@@ -24,8 +109,9 @@ class J_10A(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 127.5
 
-    livery_name = "J-10A"  # from type
-    Liveries = Liveries()[livery_name]
+    class Liveries:
+        class China(enum):
+            default = "J_10A"
 
     class Pylon1:
         DIS_PL_8A = (1, Weapons.DIS_PL_8A)
@@ -143,7 +229,7 @@ class J_10A(PlaneType):
         DIS_PL_8B = (7, Weapons.DIS_PL_8B)
 #ERRR {PLAAF_PL-10E}
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
+    pylons = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.FighterSweep

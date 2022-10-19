@@ -24,8 +24,9 @@ class VSN_A6A(PlaneType):
     eplrs = True
     radio_frequency = 250.5
 
-    livery_name = "VSN_A6A"  # from type
-    Liveries = Liveries()[livery_name]
+    class Liveries:
+        class USA(enum):
+            default = "VSN_A6A"
 
     class Pylon1:
         F_5_275Gal_Fuel_tank = (1, Weapons.F_5_275Gal_Fuel_tank)
@@ -115,7 +116,7 @@ class VSN_A6A(PlaneType):
 #ERRR {ac94375e-aa45-491e-858b-a8b93ee8b959}
 #ERRR <CLEAN>
 
-    pylons: Set[int] = {1, 2, 3, 4, 5}
+    pylons = {1, 2, 3, 4, 5}
 
     tasks = [task.Escort, task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike, task.SEAD]
     task_default = task.GroundAttack

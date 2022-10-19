@@ -24,8 +24,9 @@ class VSN_F35B(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 127.5
 
-    livery_name = "VSN_F35B"  # from type
-    Liveries = Liveries()[livery_name]
+    class Liveries:
+        class USA(enum):
+            default = "VSN_F35B"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
