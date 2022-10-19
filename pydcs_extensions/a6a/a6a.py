@@ -25,7 +25,7 @@ class VSN_A6A(PlaneType):
     radio_frequency = 250.5
 
     class Liveries:
-        class USA(enum):
+        class USA(Enum):
             default = "VSN_A6A"
 
     class Pylon1:

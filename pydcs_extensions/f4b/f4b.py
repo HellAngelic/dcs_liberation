@@ -37,7 +37,7 @@ class VSN_F4B(PlaneType):
 
 
     class Liveries:
-        class USA(enum):
+        class USA(Enum):
             default = "VSN_F4B"
 
     class Pylon1:

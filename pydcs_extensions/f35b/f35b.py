@@ -25,7 +25,7 @@ class VSN_F35B(PlaneType):
     radio_frequency = 127.5
 
     class Liveries:
-        class USA(enum):
+        class USA(Enum):
             default = "VSN_F35B"
 
     class Pylon1:

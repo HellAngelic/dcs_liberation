@@ -110,7 +110,7 @@ class J_10A(PlaneType):
     radio_frequency = 127.5
 
     class Liveries:
-        class China(enum):
+        class China(Enum):
             default = "J_10A"
 
     class Pylon1:
