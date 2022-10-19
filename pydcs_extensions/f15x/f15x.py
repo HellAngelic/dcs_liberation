@@ -104,7 +104,7 @@ class VSN_F15E_AA(PlaneType):
         AIM_9X_Sidewinder_IR_AAM = (11, Weapons.AIM_9X_Sidewinder_IR_AAM)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance]
     task_default = task.CAP
